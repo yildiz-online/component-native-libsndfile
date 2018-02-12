@@ -1,5 +1,8 @@
 cmake ../../c++ \
 -DCMAKE_BUILD_TYPE=Release \
+-DBUILD_TESTING=FALSE \
+-DBUILD_STATIC_LIBS=FALSE \
+-DDISABLE_EXTERNAL_LIBS=FALSE \
 -DOGG_INCLUDE_DIR="ogg/linux64/include" \
 -DOGG_LIBRARY="ogg/linux64/lib/libogg.a" \
 -DVORBIS_INCLUDE_DIR="vorbis/linux64/include" \
