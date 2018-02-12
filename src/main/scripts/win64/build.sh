@@ -1,8 +1,7 @@
 cmake ../../c++ \
 -DCMAKE_BUILD_TYPE=Release \
--DBUILD_PROGRAMS=FALSE \
 -DBUILD_TESTING=FALSE \
--DCMAKE_COLOR_MAKEFILE=on \
+-DBUILD_STATIC_LIBS=FALSE \
 -DOGG_INCLUDE_DIR="ogg/win64/include" \
 -DOGG_LIBRARY="ogg/win64/lib/libogg.a" \
 -DVORBIS_INCLUDE_DIR="vorbis/win64/include" \
