@@ -2,11 +2,12 @@ cmake ../../c++ \
 -DCMAKE_BUILD_TYPE=Release \
 -DBUILD_TESTING=OFF \
 -DBUILD_STATIC_LIBS=OFF \
--DDISABLE_EXTERNAL_LIBS=OFF \
 -DENABLE_CPACK=OFF \
 -DENABLE_PACKAGE_CONFIG=OFF \
 -DBUILD_PROGRAMS=OFF \
 -DBUILD_EXAMPLES=OFF \
+-DALSA_INCLUDE_DIR="alsa/linux64/include" \
+-DALSA_LIBRARY="alsa/linux64/lib/libalsa.so" \
 -DOGG_INCLUDE_DIR="ogg/linux64/include" \
 -DOGG_LIBRARY="ogg/linux64/lib/libogg.a" \
 -DVORBIS_INCLUDE_DIR="vorbis/linux64/include" \
@@ -14,6 +15,7 @@ cmake ../../c++ \
 -DVORBISFILE_LIBRARY="vorbis/linux64/lib/libvorbisfile.a" \
 -DVORBISENC_LIBRARY="vorbis/linux64/lib/libvorbisenc.a"  \
 -DCMAKE_INSTALL_PREFIX="../../../../target/classes/linux64" \
+-DDISABLE_EXTERNAL_LIBS=OFF
 -G "Unix Makefiles"
 
 make install
@@ -29,14 +31,11 @@ rm -r doc
 rm -r src
 rm -r Testing
 rm -r tests
-rm CPackConfig.cmake
-rm CPackSourceConfig.cmake
 rm CTestTestfile.cmake
 rm DartConfiguration.tcl
-rm LibSndFileConfig.cmake
-rm LibSndFileConfigVersion.cmake
 rm sndfile.pc
 rm -r ogg
 rm -r vorbis
+rm -r alsa
 
 return $r1
