@@ -9,6 +9,8 @@ cmake ../../c++ \
 -DBUILD_EXAMPLES=OFF \
 -DOGG_INCLUDE_DIR="ogg/win64/include" \
 -DOGG_LIBRARY="ogg/win64/lib/libogg.a" \
+-DFLAC_INCLUDE_DIR="flac/win64/include" \
+-DFLAC_LIBRARY="flac/win64/lib/libFLAC.dll.a" \
 -DVORBIS_INCLUDE_DIR="vorbis/win64/include" \
 -DVORBIS_LIBRARY="vorbis/win64/lib/libvorbis.a" \
 -DVORBISFILE_LIBRARY="vorbis/win64/lib/libvorbisfile.a" \
@@ -27,12 +29,9 @@ rm Makefile
 rm install_manifest.txt
 rm -r doc
 rm -r src
-rm CPackConfig.cmake
-rm CPackSourceConfig.cmake
-rm LibSndFileConfig.cmake
-rm LibSndFileConfigVersion.cmake
 rm sndfile.pc
 rm -r ogg
 rm -r vorbis
+rm -r flac
 
 return $r1

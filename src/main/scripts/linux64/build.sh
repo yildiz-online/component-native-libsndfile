@@ -8,6 +8,8 @@ cmake ../../c++ \
 -DBUILD_EXAMPLES=OFF \
 -DALSA_INCLUDE_DIR="alsa/linux64/include" \
 -DALSA_LIBRARY="alsa/linux64/lib/libalsa.so" \
+-DFLAC_INCLUDE_DIR="flac/linux64/include" \
+-DFLAC_LIBRARY="flac/linux64/lib/libFLAC.so" \
 -DOGG_INCLUDE_DIR="ogg/linux64/include" \
 -DOGG_LIBRARY="ogg/linux64/lib/libogg.a" \
 -DVORBIS_INCLUDE_DIR="vorbis/linux64/include" \
@@ -29,13 +31,10 @@ rm Makefile
 rm install_manifest.txt
 rm -r doc
 rm -r src
-rm -r Testing
-rm -r tests
-rm CTestTestfile.cmake
-rm DartConfiguration.tcl
 rm sndfile.pc
 rm -r ogg
 rm -r vorbis
 rm -r alsa
+rm -r flac
 
 return $r1
