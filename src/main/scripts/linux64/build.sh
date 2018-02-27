@@ -11,7 +11,7 @@ cmake ../../c++ \
 -DFLAC_INCLUDE_DIR="flac/linux64/include" \
 -DFLAC_LIBRARY="flac/linux64/lib/libFLAC.so" \
 -DOGG_INCLUDE_DIR="ogg/linux64/include" \
--DOGG_LIBRARY="ogg/linux64/lib/libogg.a" \
+-DOGG_LIBRARY="ogg/linux64/lib/libogg.so" \
 -DVORBIS_INCLUDE_DIR="vorbis/linux64/include" \
 -DVORBIS_LIBRARY="vorbis/linux64/lib/libvorbis.a" \
 -DVORBISFILE_LIBRARY="vorbis/linux64/lib/libvorbisfile.a" \
@@ -23,6 +23,9 @@ cmake ../../c++ \
 make install
 r1=$?
 make clean
+
+cp ogg/linux64/lib/libogg.so.0.8.2 ../../../../target/classes/linux64/lib/libogg.so
+cp flac/linux64/lib/libFLAC.so.8.3.0 ../../../../target/classes/linux64/lib/libFLAC.so
 
 rm -R CMakeFiles
 rm CMakeCache.txt
