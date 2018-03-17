@@ -20,6 +20,9 @@ cmake ../../c++ \
 
 make install
 r1=$?
+
+cp flac/win64/bin/libFLAC-8.dll ../../../../target/classes/win64/bin
+
 make clean
 
 rm -R CMakeFiles
