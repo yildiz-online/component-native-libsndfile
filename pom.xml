@@ -30,7 +30,7 @@
   <url>https://bitbucket.org/yildiz-engine-team/component-native-libsndfile</url>
 
   <artifactId>component-native-libsndfile</artifactId>
-  <version>1.0.29.2-SNAPSHOT</version>
+  <version>1.0.29.2</version>
 
   <packaging>jar</packaging>
   <inceptionYear>2017</inceptionYear>
