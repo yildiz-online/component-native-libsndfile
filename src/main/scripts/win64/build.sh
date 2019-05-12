@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cmake ../../c++ \
 -DCMAKE_BUILD_TYPE=Release \
 -DBUILD_TESTING=OFF \
