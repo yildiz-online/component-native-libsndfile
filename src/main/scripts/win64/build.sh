@@ -39,4 +39,4 @@ rm -r ogg
 rm -r vorbis
 rm -r flac
 
-return $r1
+exit ${r1}

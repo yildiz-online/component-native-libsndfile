@@ -42,5 +42,4 @@ rm install_manifest.txt
 rm Makefile
 rm sndfile.pc
 
-
-return $r1
+exit ${r1}
